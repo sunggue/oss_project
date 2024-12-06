@@ -8,6 +8,8 @@ CNN(Convolutional Neural Network)+MLP(Multi-Layer Perceptron) 구조를 결합�
 - **UTKFace Dataset**은 약 23,000개의 얼굴 이미지로 구성되어 있으며, 각 이미지에는 나이, 성별, 인종에 대한 레이블이 포함되어 있습니다.
 ![UTKface](<assets/UTKface.jpg>)
 
+---
+
 ## Code Description
 
 ### `dataset.ipynb`
