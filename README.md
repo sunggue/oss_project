@@ -1,9 +1,12 @@
 #   How Old Are You? Age Prediction Through CNN
 
 ## Introduce
-CNN+MLP 구조를 통해 주어진 이미지 속 인물의 나이를 예측합니다.
+CNN(Convolutional Neural Network)+MLP(Multi-Layer Perceptron) 구조를 결합하여 주어진 이미지 속 인물의 나이를 예측합니다.
 
 ---
+## Dataset Description
+- **UTKFace Dataset**은 약 23,000개의 얼굴 이미지로 구성되어 있으며, 각 이미지에는 나이, 성별, 인종에 대한 레이블이 포함되어 있습니다.
+![UTKface](<assets/UTKface.jpg>)
 
 ## Code Description
 
@@ -17,10 +20,10 @@ CNN+MLP 구조를 통해 주어진 이미지 속 인물의 나이를 예측합�
 - **CNN**으로 특성을 추출하고 **MLP**로 회귀하는 구조의 모델을 구축합니다.  
 ![Model Architecture](<assets/Model Architecture.jpg>)   
 - 이미지의 복잡한 패턴을 학습하기 위해 **ReLU** 활성화 함수를 사용했습니다.  
-- MLP 구조에서 **Dropout**을 구현하여 과적합을 방지했습니다.  
-- 회귀 문제이기 때문에 손실 함수로 **MSE**를 채택했습니다.  
-- 성능 평가는 직관적인 확인을 위해 **MAE**를 채택했습니다.  
-- 모델을 학습시키고, Epoch에 따른 **Mean Absolute Error**를 출력합니다.  
+- MLP 구조에서 **Dropout**을 구현하여 **과적합**을 방지했습니다.  
+- 회귀 문제이기 때문에 손실 함수로 **MSE(Mean Squared Error)**를 채택했습니다.  
+- 성능 평가는 직관적인 확인을 위해 **MAE(Mean Absolute Error)**를 채택했습니다.  
+- 모델을 학습시키고, **Epoch**에 따른 **MAE**를 출력합니다.  
 ![Training Performance](<assets/Training Performance.jpg>)   
 
 ### `face_detector.ipynb`
@@ -32,8 +35,7 @@ CNN+MLP 구조를 통해 주어진 이미지 속 인물의 나이를 예측합�
 ---
 
 ## How to Use
-1. [데이터셋 링크](<https://www.kaggle.com/datasets/jangedoo/utkface-new>)에서 데이터셋을 다운받아 **UTKface** 폴더 안에 넣습니다.  
-![UTKface](<assets/UTKface.jpg>)  
+1. [데이터셋 링크](<https://www.kaggle.com/datasets/jangedoo/utkface-new>)에서 데이터셋을 다운받아 **UTKface** 폴더 안에 넣습니다.    
 2. 나이를 확인하고 싶은 인물의 이미지를 **input** 폴더 안에 넣습니다.  
 3. `main.ipynb`에서 이미지의 이름을 작성하고 코드를 실행하여 결과를 확인합니다.  
 ![Image Name](<assets/Image Name.jpg>)  
