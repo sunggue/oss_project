@@ -1,0 +1,9 @@
+opencv-python
+matplotlib
+numpy
+Pillow
+import-ipynb
+scikit-learn
+tensorflow
+pandas
+seaborn
