@@ -37,7 +37,7 @@ CNN(Convolutional Neural Network)+MLP(Multi-Layer Perceptron) 구조를 결합�
 ---
 
 ## How to Use
-1. [데이터셋 링크](<https://www.kaggle.com/datasets/jangedoo/utkface-new>)에서 데이터셋을 다운받아 루트 디렉토리 안에 넣습니다.    
+1. [데이터셋 링크](<https://www.kaggle.com/datasets/jangedoo/utkface-new>)에서 데이터셋을 다운받아 **UTKface**폴더를 루트 디렉토리 안에 넣습니다.    
 2. 나이를 확인하고 싶은 인물의 이미지를 **input** 폴더 안에 넣습니다.  
 3. `main.ipynb`에서 이미지의 이름을 작성하고 코드를 실행하여 결과를 확인합니다.  
 ![Image Name](<assets/Image Name.JPG>)  
