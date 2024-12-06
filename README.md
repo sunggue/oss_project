@@ -36,6 +36,7 @@ CNN+MLP 구조를 통해 주어진 이미지 속 인물의 나이를 예측합�
 ![UTKface](<assets/UTKface.jpg>)  
 2. 나이를 확인하고 싶은 인물의 이미지를 **input** 폴더 안에 넣습니다.  
 3. `main.ipynb`에서 이미지의 이름을 작성하고 코드를 실행하여 결과를 확인합니다.  
+![Image Name](<assets/Image Name.jpg>)  
 ![Result Example](<assets/Result Example.jpg>) 
 
 ---
