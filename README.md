@@ -23,9 +23,9 @@ CNN(Convolutional Neural Network)+MLP(Multi-Layer Perceptron) 구조를 결합�
 ![Model Architecture](<assets/Model Architecture.jpg>)   
 - 이미지의 복잡한 패턴을 학습하기 위해 **ReLU** 활성화 함수를 사용했습니다.  
 - MLP 구조에서 **Dropout**을 구현하여 **과적합**을 방지했습니다.  
-- 회귀 문제이기 때문에 손실 함수로 **MSE(Mean Squared Error)**를 채택했습니다.  
-- 성능 평가는 직관적인 확인을 위해 **MAE(Mean Absolute Error)**를 채택했습니다.  
-- 모델을 학습시키고, **Epoch**에 따른 **MAE**를 출력합니다.  
+- 회귀 문제이기 때문에 손실 함수로 **Mean Squared Error**를 채택했습니다.  
+- 성능 평가는 직관적인 확인을 위해 **Mean Absolute Error**를 채택했습니다.  
+- 모델을 학습시키고, **Epoch**에 따른 **Mean Absolute Error**를 출력합니다.  
 ![Training Performance](<assets/Training Performance.jpg>)   
 
 ### `face_detector.ipynb`
